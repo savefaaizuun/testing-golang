@@ -15,8 +15,8 @@ type TemplateController struct {
 func (c *TemplateController) Get() {
 	c.Data["Website"] = "Perputakaan"
 	c.Data["Email"] = "savefaaizuun@gmail.com"
-	c.TplName = "layout_blog.tpl"
-	c.Layout = "layout_blog.tpl"
+	c.TplName = "template_layout.tpl"
+	c.Layout = "template_layout.tpl"
 	c.LayoutSections = make(map[string]string)
     c.LayoutSections["HtmlHead"] = "header.tpl"
     c.LayoutSections["SidebarMenu"] = "sidebar.tpl"

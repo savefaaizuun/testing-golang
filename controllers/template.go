@@ -18,10 +18,10 @@ func (c *TemplateController) Get() {
 	c.TplName = "template_layout.tpl"
 	c.Layout = "template_layout.tpl"
 	c.LayoutSections = make(map[string]string)
-    c.LayoutSections["HtmlHead"] = "header.tpl"
-    c.LayoutSections["SidebarMenu"] = "sidebar.tpl"
-    c.LayoutSections["HtmlFooter"] = "footer.tpl"
-    c.LayoutSections["Scripts"] = "script.tpl"
+    c.LayoutSections["HtmlHead"] = "template/header.tpl"
+    c.LayoutSections["SidebarMenu"] = "template/sidebar.tpl"
+    c.LayoutSections["HtmlFooter"] = "template/footer.tpl"
+    c.LayoutSections["Scripts"] = "template/script.tpl"
     
 }
 
